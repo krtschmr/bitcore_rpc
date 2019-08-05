@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "bitcore_rpc"
-  spec.version       = "0.1"
+  spec.version       = "0.1.1"
   spec.authors       = ["Tim Kretschmer"]
   spec.email         = ["tim@krtschmr.de"]
   spec.description   = %q{connects to the Bitcoin RPC or any btc fork}

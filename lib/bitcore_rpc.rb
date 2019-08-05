@@ -27,6 +27,10 @@ class BitcoreRPC
     request(name, args)
   end
 
+  def valid_address?(address)
+    request(:validateaddress, address).fetch("isvalid")
+  end
+
   def get_transactions(label="*", amount=100, skip=0, watchonly=false)
     request(:listtransactions, label, amount, skip, watchonly)
   end
